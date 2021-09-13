@@ -13,7 +13,6 @@ build:
   noarch: python
   number: 0
   script:
-    - {{ PYTHON }} -m pip install jupyter-packaging
     - {{ PYTHON }} -m pip install . -vv
     - jupyter nbextension install --py --sys-prefix keplergl
 
@@ -23,6 +22,7 @@ requirements:
     - setuptools
     - pip
     - jupyter
+    - jupyter-packaging
     - pandas
     - geopandas
   run:
