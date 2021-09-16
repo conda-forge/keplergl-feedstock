@@ -1,5 +1,5 @@
 {% set name = "keplergl" %}
-{% set version = "0.3.0" %}
+{% set version = "0.3.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: cb21047b2104413af1c00ef1ac75794a19e0b578e51c69c86713911d97370167
+  sha256: 1762c4212f177843884ad51f74e06ee3efe58ea3711d0327b6aa99ccbed52815
 
 build:
   noarch: python
   number: 0
-  script: 
+  script:
     - {{ PYTHON }} -m pip install . -vv
     - jupyter nbextension install --py --sys-prefix keplergl
 
@@ -42,7 +42,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE.txt
-  summary: 'Kepler.gl for Jupyter'
+  summary: Kepler.gl for Jupyter
   description: |
     This is a simple jupyter widget for kepler.gl, an advanced geospatial
     visualization tool, to render large-scale interactive maps.
@@ -50,4 +50,4 @@ about:
 
 extra:
   recipe-maintainers:
-    - lixun910 
+    - lixun910
