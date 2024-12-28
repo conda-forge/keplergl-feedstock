@@ -1,5 +1,5 @@
 {% set name = "keplergl" %}
-{% set version = "0.3.4" %}
+{% set version = "0.3.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 1b236ff4514cb677312705ba3af64a8edbc5e61e83b073baef209a41182fa6fc
+  sha256: a295bf160d73ff16f220086b6e90dfd53b24dc9ad32d45f104fa06af18012c16
 
 build:
   noarch: python
